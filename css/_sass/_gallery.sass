@@ -10,6 +10,9 @@
         flex-basis: 50%
       &:first-child
         flex-basis: 50%
+      &:hover .icon
+        transition: transform 0.3s
+        transform: scale(1.25)
     @media screen and (max-width: $medium-breakpoint)
       a
         flex: 1 1 50%
@@ -38,13 +41,22 @@
         left: 7%
         @extend %gallery-caption
       .orange-bar
-        background: #dc7725
+        background: $orange
         height: 5px
         width: 40px
         margin-bottom: 15px
         position: absolute
         bottom: 17%
         left: 7%
+      .icon
+        padding: 25px
+        border-radius: 100%
+        background-color: rgba(93, 93, 92, 0.9)
+        width: 40px
+        height: 40px
+        img
+          width: 100%
+
 
 
 .raft

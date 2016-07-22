@@ -198,6 +198,9 @@ a {
       flex-basis: 50%; }
     .travel-gallery .wrapper a:first-child {
       flex-basis: 50%; }
+    .travel-gallery .wrapper a:hover .icon {
+      transition: transform 0.3s;
+      transform: scale(1.25); }
   @media screen and (max-width: 840px) {
     .travel-gallery .wrapper a {
       flex: 1 1 50%; }
@@ -225,13 +228,21 @@ a {
       bottom: 9%;
       left: 7%; }
     .travel-gallery .wrapper figure .orange-bar {
-      background: #dc7725;
+      background: #cf7c3a;
       height: 5px;
       width: 40px;
       margin-bottom: 15px;
       position: absolute;
       bottom: 17%;
       left: 7%; }
+    .travel-gallery .wrapper figure .icon {
+      padding: 25px;
+      border-radius: 100%;
+      background-color: rgba(93, 93, 92, 0.9);
+      width: 40px;
+      height: 40px; }
+      .travel-gallery .wrapper figure .icon img {
+        width: 100%; }
 
 .raft {
   background-image: url(../img/home-raft.jpg); }
