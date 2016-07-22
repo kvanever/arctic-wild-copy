@@ -30,6 +30,13 @@
   letter-spacing: 6px;
   text-transform: uppercase; }
 
+.travel-gallery .wrapper figure figcaption {
+  font-family: "Fjalla One", serif;
+  font-size: 21.65625px;
+  line-height: 1.5;
+  color: white;
+  text-transform: uppercase; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -151,6 +158,7 @@ a {
 
 .middle-nav {
   background-image: url(../img/bg-categorynav.jpg);
+  border-top: 1px black solid;
   border-bottom: 1px black solid;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); }
   .middle-nav .row {
@@ -178,5 +186,77 @@ a {
         font-size: 1.3em;
         color: #868686;
         padding-left: 0.5em; }
+
+.travel-gallery .wrapper {
+  padding-top: 5em;
+  background-color: #343432;
+  display: flex;
+  flex-wrap: wrap; }
+  .travel-gallery .wrapper a {
+    flex: 1 1 25%; }
+    .travel-gallery .wrapper a:last-child {
+      flex-basis: 50%; }
+    .travel-gallery .wrapper a:first-child {
+      flex-basis: 50%; }
+  @media screen and (max-width: 840px) {
+    .travel-gallery .wrapper a {
+      flex: 1 1 50%; }
+      .travel-gallery .wrapper a:last-child {
+        flex-basis: 100%; }
+      .travel-gallery .wrapper a:first-child {
+        flex-basis: 100%; } }
+  @media screen and (max-width: 420px) {
+    .travel-gallery .wrapper a {
+      flex: 1 1 100%; }
+      .travel-gallery .wrapper a:last-child {
+        flex-basis: 100%; }
+      .travel-gallery .wrapper a:first-child {
+        flex-basis: 100%; } }
+  .travel-gallery .wrapper figure {
+    height: 420px;
+    display: flex;
+    position: relative;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; }
+    .travel-gallery .wrapper figure figcaption {
+      position: absolute;
+      bottom: 9%;
+      left: 7%; }
+    .travel-gallery .wrapper figure .orange-bar {
+      background: #dc7725;
+      height: 5px;
+      width: 40px;
+      margin-bottom: 15px;
+      position: absolute;
+      bottom: 17%;
+      left: 7%; }
+
+.raft {
+  background-image: url(../img/home-raft.jpg); }
+
+.base-camp {
+  background-image: url(../img/home-basecamp.jpg); }
+
+.backpacking {
+  background-image: url(../img/home-backpacking.jpg); }
+
+.canoe {
+  background-image: url(../img/home-canoe.jpg); }
+
+.photo {
+  background-image: url(../img/home-photo.jpg); }
+
+.custom {
+  background-image: url(../img/home-custom.jpg); }
+
+@media screen and (max-width: 840px) {
+  a {
+    flex: 1 1 50%; }
+    a:last-child {
+      flex-basis: 100%; }
+    a:first-child {
+      flex-basis: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

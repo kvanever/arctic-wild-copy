@@ -1,0 +1,74 @@
+.travel-gallery
+  .wrapper
+    padding-top: 5em
+    background-color: $dark-gray
+    display: flex
+    flex-wrap: wrap
+    a
+      flex: 1 1 25%
+      &:last-child
+        flex-basis: 50%
+      &:first-child
+        flex-basis: 50%
+    @media screen and (max-width: $medium-breakpoint)
+      a
+        flex: 1 1 50%
+        &:last-child
+          flex-basis: 100%
+        &:first-child
+          flex-basis: 100%
+    @media screen and (max-width: $small-breakpoint)
+      a
+        flex: 1 1 100%
+        &:last-child
+          flex-basis: 100%
+        &:first-child
+          flex-basis: 100%
+    figure
+      height: 420px
+      display: flex
+      position: relative
+      background-position: bottom center
+      background-repeat: no-repeat
+      justify-content: center
+      align-items: center
+      figcaption
+        position: absolute
+        bottom: 9%
+        left: 7%
+        @extend %gallery-caption
+      .orange-bar
+        background: #dc7725
+        height: 5px
+        width: 40px
+        margin-bottom: 15px
+        position: absolute
+        bottom: 17%
+        left: 7%
+
+
+.raft
+  background-image: url(../img/home-raft.jpg)
+
+.base-camp
+  background-image: url(../img/home-basecamp.jpg)
+
+.backpacking
+  background-image: url(../img/home-backpacking.jpg)
+
+.canoe
+  background-image: url(../img/home-canoe.jpg)
+
+.photo
+  background-image: url(../img/home-photo.jpg)
+
+.custom
+  background-image: url(../img/home-custom.jpg)
+
+@media screen and (max-width: $medium-breakpoint)
+  a
+    flex: 1 1 50%
+    &:last-child
+      flex-basis: 100%
+    &:first-child
+      flex-basis: 100%
