@@ -45,4 +45,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.main-branding-background-image {
+  background-image: url(../img/hero-background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .main-branding-background-image header {
+    display: flex; }
+    .main-branding-background-image header figure {
+      display: flex; }
+    .main-branding-background-image header nav {
+      display: flex; }
+      .main-branding-background-image header nav ul {
+        display: flex; }
+
 /*# sourceMappingURL=styles.css.map */
