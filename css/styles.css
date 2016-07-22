@@ -90,8 +90,10 @@ a {
 
 .main-branding-background-image {
   background-image: url(../img/hero-background.jpg);
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-origin: padding-box;
   color: white; }
   .main-branding-background-image header {
     padding-top: 4em;
@@ -100,7 +102,7 @@ a {
     width: 82.5%;
     margin: auto; }
     .main-branding-background-image header .logo {
-      flex: 1 1 110px;
+      flex: 1 1 200px;
       display: flex; }
       .main-branding-background-image header .logo img:first-child {
         width: 50px; }
@@ -238,7 +240,8 @@ a {
       align-items: center; }
       @media screen and (max-width: 600px) {
         .travel-gallery .wrapper figure {
-          height: 240px; } }
+          height: 240px;
+          border-radius: 2px; } }
       .travel-gallery .wrapper figure figcaption {
         position: absolute;
         bottom: 9%;
@@ -251,12 +254,20 @@ a {
         position: absolute;
         bottom: 17%;
         left: 7%; }
+        @media screen and (max-width: 600px) {
+          .travel-gallery .wrapper figure .orange-bar {
+            bottom: 23%; } }
       .travel-gallery .wrapper figure .icon {
         padding: 25px;
         border-radius: 100%;
         background-color: rgba(93, 93, 92, 0.9);
         width: 40px;
         height: 40px; }
+        @media screen and (max-width: 600px) {
+          .travel-gallery .wrapper figure .icon {
+            width: 25px;
+            height: 25px;
+            padding: 15px; } }
         .travel-gallery .wrapper figure .icon img {
           width: 100%; }
 
