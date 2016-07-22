@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .hero h1 span {
   font-family: "Playfair Display", sans-serif;
   font-size: 120px;
@@ -138,18 +137,24 @@ a {
   position: relative; }
   .dropdown > a {
     padding: 1em; }
-  .dropdown::after {
-    font-family: sans-serif;
-    content: ""; }
+    .dropdown > a i {
+      padding-left: 8px;
+      font-size: 16.40625px; }
+      .dropdown > a i.fa-caret-down {
+        color: #b9bdb8; }
   .dropdown:hover ul {
-    display: block;
+    visibility: visible;
+    opacity: 1;
     background-color: #343432; }
   .dropdown:hover a {
     background-color: #343432;
     border-radius: 3px; }
   .dropdown ul {
     position: absolute;
-    display: none; }
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms ease;
+    background-color: transparent; }
     .dropdown ul li {
       background-color: #343432;
       line-height: 2em;

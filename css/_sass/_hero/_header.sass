@@ -46,12 +46,17 @@
   position: relative
   & > a
     padding: 1em
-  &::after
-    font-family: sans-serif
-    content: '\f107'
+    i
+      padding-left: 8px
+      font-size: $small-font-size * 1.25
+      &.fa-caret-down
+        color: $light-gray
+
+
   &:hover
     ul
-      display: block
+      visibility: visible
+      opacity: 1
       background-color: $dark-gray
     a
       background-color: $dark-gray
@@ -59,7 +64,10 @@
 
   ul
     position: absolute
-    display: none
+    visibility: hidden
+    opacity: 0
+    transition: 300ms ease
+    background-color: transparent
     li
       background-color: $dark-gray
       @extend %nav-small-links
