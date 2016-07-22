@@ -10,7 +10,7 @@
     width: 82.5%
     margin: auto
     .logo
-      flex: 1 1 auto
+      flex: 1 1 110px
       display: flex
       img:first-child
         width: 50px
@@ -30,10 +30,19 @@
 
 .dropdown
   position: relative
+  & > a
+    padding: 1em
+  &::after
+    font-family: sans-serif
+    content: '\f107'
   &:hover
-    background-color: $dark-gray
     ul
       display: block
+      background-color: $dark-gray
+    a
+      background-color: $dark-gray
+      border-radius: 3px
+
   ul
     position: absolute
     display: none
@@ -42,3 +51,7 @@
       @extend %nav-small-links
       letter-spacing: normal
       color: $light-gray
+      line-height: 2em
+      width: 200px
+      padding: 1em
+      border-bottom: 1px $light-gray solid

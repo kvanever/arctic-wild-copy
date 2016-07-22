@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main-branding-background-image header nav {
   font-family: "Fjalla One", serif;
   font-size: 12.75px;
@@ -7,7 +8,9 @@
   text-transform: uppercase; }
 
 .dropdown ul li {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  font-size: 15px; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -72,7 +75,7 @@ a {
     width: 82.5%;
     margin: auto; }
     .main-branding-background-image header .logo {
-      flex: 1 1 auto;
+      flex: 1 1 110px;
       display: flex; }
       .main-branding-background-image header .logo img:first-child {
         width: 50px; }
@@ -91,16 +94,27 @@ a {
 
 .dropdown {
   position: relative; }
-  .dropdown:hover {
+  .dropdown > a {
+    padding: 1em; }
+  .dropdown::after {
+    font-family: sans-serif;
+    content: ""; }
+  .dropdown:hover ul {
+    display: block;
     background-color: #343432; }
-    .dropdown:hover ul {
-      display: block; }
+  .dropdown:hover a {
+    background-color: #343432;
+    border-radius: 3px; }
   .dropdown ul {
     position: absolute;
     display: none; }
     .dropdown ul li {
       background-color: #343432;
       letter-spacing: normal;
-      color: #b9bdb8; }
+      color: #b9bdb8;
+      line-height: 2em;
+      width: 200px;
+      padding: 1em;
+      border-bottom: 1px #b9bdb8 solid; }
 
 /*# sourceMappingURL=styles.css.map */
