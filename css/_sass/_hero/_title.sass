@@ -19,11 +19,19 @@
   .button
     padding: 4em
     border-top: 5px $reverse-text-color solid
+    position: relative
     a
       padding: 1.5em 2em
       background-color: $orange
       @extend %nav-big-links
       &:target ~ #gallery
         transform: translateY( -500px )
+      @media screen and (max-width: $small-breakpoint)
+        display: none
+    img
+      position: absolute
+      bottom: 40px
+      left: 50%
+      transform: translate(-50%, 0)
       @media screen and (max-width: $small-breakpoint)
         display: none

@@ -185,7 +185,8 @@ a {
         font-size: 48px; } }
   .hero .button {
     padding: 4em;
-    border-top: 5px white solid; }
+    border-top: 5px white solid;
+    position: relative; }
     .hero .button a {
       padding: 1.5em 2em;
       background-color: #cf7c3a; }
@@ -193,6 +194,14 @@ a {
         transform: translateY(-500px); }
       @media screen and (max-width: 600px) {
         .hero .button a {
+          display: none; } }
+    .hero .button img {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translate(-50%, 0); }
+      @media screen and (max-width: 600px) {
+        .hero .button img {
           display: none; } }
 
 .middle-nav {
