@@ -1,9 +1,16 @@
 .travel-gallery
+  background-color: $dark-gray
+  @media screen and (max-width: $small-breakpoint)
+    background-color: $light-gray
   .wrapper
     padding-top: 5em
-    background-color: $dark-gray
     display: flex
     flex-wrap: wrap
+    @media screen and (max-width: $small-breakpoint)
+      flex-direction: column
+      width: 90%
+      margin: auto
+      padding-top: 0
     a
       flex: 1 1 25%
       &:last-child
@@ -23,9 +30,12 @@
     @media screen and (max-width: $small-breakpoint)
       a
         flex: 1 1 100%
-        &:last-child
-          flex-basis: 100%
+        padding: 4% 0
         &:first-child
+          padding-top: 8%
+          flex-basis: 100%
+        &:last-child
+          padding-bottom: 8%
           flex-basis: 100%
     figure
       height: 420px
@@ -35,6 +45,8 @@
       background-repeat: no-repeat
       justify-content: center
       align-items: center
+      @media screen and (max-width: $small-breakpoint)
+        height: 240px
       figcaption
         position: absolute
         bottom: 9%
