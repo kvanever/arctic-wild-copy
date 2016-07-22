@@ -4,9 +4,13 @@
   background-repeat: no-repeat
   color: white
   header
+    padding-top: 4em
     display: flex
     justify-content: space-around
+    width: 82.5%
+    margin: auto
     .logo
+      flex: 1 1 auto
       display: flex
       img:first-child
         width: 50px
@@ -14,9 +18,15 @@
         width: 180px
     nav
       display: flex
+      align-self: center
+      flex: 1 1 auto
       @extend %nav-big-links
       >ul
         display: flex
+        justify-content: space-between
+        flex: 1 1 auto
+        li
+          flex: 1 1 auto
 
 .dropdown
   position: relative

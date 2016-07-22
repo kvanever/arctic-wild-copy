@@ -1,9 +1,10 @@
 .main-branding-background-image header nav {
   font-family: "Fjalla One", serif;
-  font-size: 1rem;
+  font-size: 12.75px;
   line-height: 1.5;
   color: white;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 .dropdown ul li {
   font-family: "Open Sans", sans-serif; }
@@ -65,18 +66,28 @@ a {
   background-repeat: no-repeat;
   color: white; }
   .main-branding-background-image header {
+    padding-top: 4em;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 82.5%;
+    margin: auto; }
     .main-branding-background-image header .logo {
+      flex: 1 1 auto;
       display: flex; }
       .main-branding-background-image header .logo img:first-child {
         width: 50px; }
       .main-branding-background-image header .logo img:nth-child(2) {
         width: 180px; }
     .main-branding-background-image header nav {
-      display: flex; }
+      display: flex;
+      align-self: center;
+      flex: 1 1 auto; }
       .main-branding-background-image header nav > ul {
-        display: flex; }
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 auto; }
+        .main-branding-background-image header nav > ul li {
+          flex: 1 1 auto; }
 
 .dropdown {
   position: relative; }
