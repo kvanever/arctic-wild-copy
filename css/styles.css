@@ -1,7 +1,15 @@
 @charset "UTF-8";
-.main-branding-background-image header nav {
+.hero h1 span {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.main-branding-background-image header nav, .hero .button a {
   font-family: "Fjalla One", serif;
-  font-size: 12.75px;
+  font-size: 13.125px;
   line-height: 1.5;
   color: white;
   letter-spacing: 2px;
@@ -11,6 +19,14 @@
   font-family: "Open Sans", sans-serif;
   text-transform: none;
   font-size: 15px; }
+
+.hero h1 {
+  font-family: "Fjalla One", serif;
+  font-size: 19.6875px;
+  line-height: 1.5;
+  color: white;
+  letter-spacing: 6px;
+  text-transform: uppercase; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -116,5 +132,19 @@ a {
       width: 200px;
       padding: 1em;
       border-bottom: 1px #b9bdb8 solid; }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .hero h1 {
+    padding-bottom: 2em; }
+  .hero .button {
+    padding: 4em;
+    border-top: 5px white solid; }
+    .hero .button a {
+      padding: 1.5em 2em;
+      background-color: #cf7c3a; }
 
 /*# sourceMappingURL=styles.css.map */
