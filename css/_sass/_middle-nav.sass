@@ -15,6 +15,12 @@
       justify-content: space-between
       flex: 1 1 0
       @extend %nav-small-links
+      &>li:hover
+        color: $reverse-text-color
+      &>li:first-child
+        color: $reverse-text-color
+        &:hover
+          color: $orange
       &>li:last-child
         padding-left: 0.5em
         border-left: 1px $light-gray solid
