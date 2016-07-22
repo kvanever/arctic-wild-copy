@@ -6,8 +6,16 @@
   h1
     @extend %small-title
     padding-bottom: 2em
+    @media screen and (max-width: $medium-breakpoint)
+      font-size: $bigger-font-size * 0.8
+    @media screen and (max-width: $small-breakpoint)
+      font-size: $bigger-font-size * 0.6
     span
       @extend %title
+      @media screen and (max-width: $medium-breakpoint)
+        font-size: $title-font-size * 0.6
+      @media screen and (max-width: $small-breakpoint)
+        font-size: $title-font-size * 0.4
   .button
     padding: 4em
     border-top: 5px $reverse-text-color solid
@@ -15,3 +23,7 @@
       padding: 1.5em 2em
       background-color: $orange
       @extend %nav-big-links
+      &:target ~ #gallery
+        transform: translateY( -500px )
+      @media screen and (max-width: $small-breakpoint)
+        display: none

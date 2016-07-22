@@ -7,6 +7,8 @@
   color: white
   header
     padding-top: 4em
+    @media screen and (max-width: $medium-breakpoint)
+      padding-top: 1em
     display: flex
     justify-content: space-around
     width: 82.5%
@@ -23,12 +25,22 @@
       align-self: center
       flex: 1 1 auto
       @extend %nav-big-links
-      >ul
+      &>ul
         display: flex
         justify-content: space-between
         flex: 1 1 auto
         li
           flex: 1 1 auto
+      @media screen and (max-width: $hero-breakpoint)
+        display: none
+    .button
+      display: none
+      @media screen and (max-width: $hero-breakpoint)
+        display: block
+        align-self: center
+        flex: 1 1 auto
+        font-size: 2em
+        text-align: right
 
 .dropdown
   position: relative
